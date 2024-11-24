@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <canvas id="canvas"></canvas>
+    <div style="position: relative;">
+        <div class="victory-image">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="/ko-removebg-preview.png" height="150" width="250" />
+                <p style="color: gainsboro; font-size: xx-large;" class="winner-text">Player 1 wins</p>
+                <button id="rematch-button">Rematch</button>
+            </div>
+        </div>
+        <div class="health-container">
+            <div class="playerHealthContainer">
+                <div class="playerHealthBorder">
+                    <div class="playerHealth"></div>
+                </div>
+                <div class="playerBarrierBorder">
+                    <div class="playerBarrier"></div>
+                </div>
+            </div>
+            <div class="timer">
+                10
+            </div>
+            <div class="enemyHealthContainer">
+                <div class="enemyHealthBorder">
+                    <div class="enemyHealth"></div>
+                </div>
+                <div class="enemyBarrierBorder">
+                    <div class="enemyBarrier"></div>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
 
 
     <script type="module" src="index.js"></script>
 </body>
+
 </html>

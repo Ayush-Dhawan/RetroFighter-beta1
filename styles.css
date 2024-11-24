@@ -1,0 +1,116 @@
+.health-container{
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 1024px;
+    /* background-color: aqua; */
+}
+
+
+.playerHealthContainer{
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.enemyHealthContainer{
+    width: 100%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.timer{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerHealth{
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+    border-top-left-radius: 0px;  
+    border-bottom-left-radius: 30px; 
+}
+
+.playerHealthBorder{
+    border: 2px solid yellow;
+    height: 30px;
+    width: 100%;
+    border-top-left-radius: 0px;  
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.enemyHealth {
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+    border-top-right-radius: 0px;  
+    border-bottom-right-radius: 30px; 
+}
+
+.enemyHealthBorder{
+    border: 2px solid yellow;
+    height: 30px;
+    width: 100%;
+    border-top-right-radius: 0px;  
+    border-bottom-right-radius: 30px; 
+}
+
+
+.enemyBarrier{
+    background-color: rgb(92, 239, 92);
+    height: 15px;
+    width: 100%;
+    border-top-right-radius: 0px;  
+    border-bottom-right-radius: 30px; 
+}
+
+.enemyBarrierBorder{
+    border: 2px solid rgb(92, 239, 92);
+    height: 15px;
+    width: 80%;
+    border-top-right-radius: 0px;  
+    border-bottom-right-radius: 30px; 
+}
+
+.playerBarrier{
+    background-color: rgb(92, 239, 92);
+    height: 15px;
+    width: 100%;
+    border-top-left-radius: 0px;  
+    border-bottom-left-radius: 30px; 
+}
+
+.playerBarrierBorder{
+    border: 2px solid rgb(92, 239, 92);
+    height: 15px;
+    width: 80%;
+    border-top-left-radius: 0px;  
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.victory-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -60%);
+    display: none;
+}
